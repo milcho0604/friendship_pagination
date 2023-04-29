@@ -22,12 +22,11 @@
       <tr>
         <th>PID</th>
         <th>이름</th>
-        <th>categoryCode</th>
         <th>성별</th>
         <th>전화</th>
         <th>이메일</th>
-        <th>titleNo</th>
-        <th>종류</th>
+        <th>분류</th>
+        <th>친밀도</th>
       </tr>
     </thead>
     <tbody>
@@ -35,12 +34,11 @@
         <tr data-url="edit?pid=${person.pid}&${pagination.queryString}">
           <td>${ person.pid }</td>
           <td>${ person.name }</td>
-          <td>${ person.categoryCode }</td>
           <td>${ person.gender }</td>
           <td>${ person.phone }</td>
           <td>${ person.email }</td>
-          <td>${ person.title }</td>
           <td>${ person.titleName }</td>
+          <td>${ person.title }</td>
         </tr>
       </c:forEach>
     </tbody>

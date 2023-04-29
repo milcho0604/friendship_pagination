@@ -16,7 +16,7 @@ public interface PersonMapper {
 
     @Select("""
         SELECT p.*, c.title titleName
-        FROM person p LEFT JOIN category c ON p.title = c.code
+        FROM person p LEFT JOIN category c ON p.categoryCode = c.code
         ORDER BY p.pid
         LIMIT #{firstRecordIndex}, #{sz} """)
     List<Person> findAll(Pagination pagination);

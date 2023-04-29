@@ -30,10 +30,10 @@
         <td><form:errors path="name" class="red" /></td>
       </tr>
       <tr>
-        <td>종류:</td>
-        <td><form:select path="title"
+        <td>분류:</td>
+        <td><form:select path="categoryCode"
                 itemValue="code" itemLabel="title" items="${ categories }" /></td>
-        <td><form:errors path="title" class="red" /></td>
+        <td><form:errors path="categoryCode" class="red" /></td>
       </tr>
       <tr>
         <td>성별:</td>
@@ -56,6 +56,11 @@
         <td>categoryCode:</td>
         <td><form:input path="categoryCode" /></td>
         <td><form:errors path="categoryCode" class="red" /></td>
+      </tr>
+      <tr>
+        <td>친밀도:</td>
+        <td><form:input path="title" /></td>
+        <td><form:errors path="title" class="red" /></td>
       </tr>
     </table>
     <hr />
